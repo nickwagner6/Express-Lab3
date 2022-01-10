@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add an Assignment</title>
+  </head>
+  <body>
+    <h1>Add an Assignment</h1>
+    <form action="assignment-added" method="POST">
+      <p>Assignment Name
+        <input type="text" name="name" placeholder="Assignment Name" /></p>
+
+      <p>Your Score
+        <input
+          type="number"
+          name="score"
+          min="0"
+          step=".5"
+          placeholder="Your Score"
+        /></p>
+
+      <p>Total Possible Score
+        <input type="number" name="total" placeholder="Total Score" /></p>
+
+      <input type="checkbox" name="completed" />
+      <label for="completed">Have you completed this assignment?</label>
+      <br />
+      <input type="submit" value="Add" />
+
+      <br />
+      <a href="/home">Never Mind</a>
+    </form>
+  </body>
+</html>
